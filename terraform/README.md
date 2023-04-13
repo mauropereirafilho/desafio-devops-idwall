@@ -32,4 +32,4 @@ terraform apply -auto-approve -var="region=REGIAO_QUE_DESEJA_SUBIR_O_PROJETO" -v
     - Caso tenha dúvida de qual [região](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br) e [zona](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br) usar.
     - Caso tenha dúvida de qual é seu [IP](https://meuip.io/) válido.
 
-* Uma boa prática que poderia ser adotada, seria salvar o arquivo `.tfstate`em um GCS. Mas o procedimento não fora adotado, pois não fazia parte do escopo do projeto.
+* Uma boa prática que poderia ser adotada, seria salvar o arquivo `.tfstate`em um [GCS](https://developer.hashicorp.com/terraform/language/settings/backends/gcs). Mas o procedimento não fora adotado, pois não fazia parte do escopo do projeto.
