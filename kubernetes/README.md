@@ -31,7 +31,7 @@ helm install desafio-devops --namespace NAMESPACE_DESEJADA .
 
 * Para facilitar a transposição dos manifestos, para `helm chart`, utilizei a ferramenta [Helmify](https://github.com/arttor/helmify/releases) que é um binário que realiza este procedimento facilmente.
 
-* A ferramenta [kubectl](https://kubernetes.io/docs/tasks/tools/)tambem será necessária, para realizarmos tarefas a nível de cliente no cluster.
+* A ferramenta [kubectl](https://kubernetes.io/docs/tasks/tools/) também será necessária, para realizarmos tarefas a nível de cliente no cluster.
 
 * Quando executamos a instalação do nosso `helm chart`, com o comando `helm install desafio-devops --namespace NAMESPACE_DESEJADA`, a `NAMESPACE` deve ser criada anteriormente, pois se não, o **Helm** **não** irá encontrar a namespace desejada. Comando para a criação da namespace, é o seguinte.
 
