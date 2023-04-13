@@ -28,8 +28,8 @@ terraform apply -auto-approve -var="region=REGIAO_QUE_DESEJA_SUBIR_O_PROJETO" -v
 
 * No arquivo `provider.tf`, o campo `project`, deve ser substituído pelo ID do seu projeto.
 
-* Se não for passado as variáveis de **region**,**zone**, e **ssh_ip_range**, o projeto não vai funcionar.
-    - Caso tenha dúvida de [região](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br) e [zona](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br) usar.
-    - Caso tenha duvida de qual é seu [IP](https://meuip.io/) usar
+* Se não for passado as variáveis de **region**,**zone**, e **ssh_ip_range** conforme o comando à cima, o projeto não vai funcionar.
+    - Caso tenha dúvida de qual [região](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br) e [zona](https://cloud.google.com/compute/docs/regions-zones?hl=pt-br) usar.
+    - Caso tenha dúvida de qual é seu [IP](https://meuip.io/) válido.
 
 * Uma boa prática que poderia ser adotada, seria salvar o arquivo `.tfstate`em um GCS. Mas o procedimento não fora adotado, pois não fazia parte do escopo do projeto.
