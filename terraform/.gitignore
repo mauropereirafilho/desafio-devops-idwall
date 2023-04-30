@@ -1,6 +1,7 @@
 *.tfvars
 *.json
-.terraform.lock.hcl
+.terraform*
 *.tfstate.*
 *.sh
 variables.tf
+terraform.tfstate
