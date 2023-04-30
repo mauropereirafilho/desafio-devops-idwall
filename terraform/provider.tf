@@ -12,5 +12,5 @@ provider "google" {
 
   project = "desafio-devops-383518"
   region  = var.region
-  zone    = "$(var.region)-c"
+  zone    = var.zone
 }

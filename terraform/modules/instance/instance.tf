@@ -4,6 +4,7 @@ resource "google_compute_instance" "instance-desafio" {
   zone         = var.zone
   depends_on   = [google_compute_firewall.firewall_desafio]
 
+
   tags = ["value", "vm-desafio"]
 
   boot_disk {
@@ -24,11 +25,8 @@ resource "google_compute_instance" "instance-desafio" {
     }
   }
 
-  metadata_startup_script = file("build.sh")
+  metadata_startup_script = file("./modules/instance/build.sh")
 
 }
 
-output "instance_ip" {
-  value = google_compute_instance.instance-desafio.network_interface[0].access_config[0].nat_ip
 
-}

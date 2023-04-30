@@ -3,7 +3,6 @@ resource "google_compute_firewall" "firewall_desafio" {
   name        = "firewall-desafio"
   network     = "vpc-desafio"
   description = "Firewall para gerenciar as portas do projeto"
-  depends_on  = [google_compute_network.vpc_desafio]
 
   allow {
     protocol = "tcp"
@@ -18,4 +17,6 @@ resource "google_compute_firewall" "firewall_desafio" {
   source_ranges = concat(["${var.ssh_ip_range}/32"], ["0.0.0.0/0"])
   source_tags   = ["value"]
   target_tags   = ["vm-desafio"]
+
 }
+

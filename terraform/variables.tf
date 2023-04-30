@@ -3,11 +3,12 @@ variable "region" {
   description = "Região da GCP em que será provisionada a instância"
 }
 
-variable "ssh_ip_range" {
-  description = "Range de IP para acesso via SSH"
-}
-
 variable "zone" {
   type        = string
   description = "Zona da GCP em que será provisionada a instância"
+}
+
+variable "ssh_ip_range" {
+  type        = string
+  description = "IP público para acesso via SSH"
 }

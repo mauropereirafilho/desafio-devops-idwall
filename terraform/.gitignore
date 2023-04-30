@@ -3,3 +3,4 @@
 .terraform.lock.hcl
 *.tfstate
 *.sh
+variables.tf
