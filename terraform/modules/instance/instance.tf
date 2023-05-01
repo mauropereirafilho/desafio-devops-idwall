@@ -2,8 +2,6 @@ resource "google_compute_instance" "instance-desafio" {
   name         = "vm-desafio"
   machine_type = "n1-standard-1"
   zone         = var.zone
-  depends_on   = [google_compute_firewall.firewall_desafio]
-
 
   tags = ["value", "vm-desafio"]
 
